@@ -5,9 +5,10 @@ time.sleep(2)
 n = random.randint(1, 10)
 print('Number has been generated!!\nYou have 4 chances to guess the number')
 
-count = 4
 
-while count!=0:
+count = 0
+
+while count < 4:
     a = int(input('Guess the number: '))
 
     if a == n:
@@ -17,4 +18,4 @@ while count!=0:
         print('The number is less than ', a)
     else:
         print('The number is greater than ', a)
-    count=-1
+    count = count + 1
